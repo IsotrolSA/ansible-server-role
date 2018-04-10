@@ -1,0 +1,5 @@
+---
+  - name: Include SSHD Variable file
+    include_vars: sshd_config.yml
+  - name: Include SSHD Config file
+    include_tasks: sshd_config.yml
