@@ -1,0 +1,8 @@
+---
+  - name: Include Create Users Task
+    include_tasks: users.yml
+    #include_tasks: users.yml #Support vesion Ansible > 2.2.1
+
+  - name: Include RSA Public Key Task
+    include_tasks: keys.yml
+    #include_tasks: keys.yml #Support vesion Ansible > 2.2.1

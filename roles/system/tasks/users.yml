@@ -1,0 +1,12 @@
+---
+  - name: Set password user soporte
+    user:
+      name: soporte
+      password: '{{password_soporte}}'
+      state: present
+
+  - name: Set password user soportext
+    user:
+      name: soportext
+      password: '{{password_soportext}}'
+      state: present
