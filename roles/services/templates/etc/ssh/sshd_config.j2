@@ -15,18 +15,14 @@ KexAlgorithms {{ sshd_kex_algorithms | unique | join(",") }}
 Ciphers {{ sshd_ciphers | unique | join(",") }}
 MACs {{ sshd_macs | unique | join(",") }}
 UsePrivilegeSeparation {{ sshd_use_privilege_separation }}
-KeyRegenerationInterval {{ sshd_key_regeneration_interval }}
-ServerKeyBits {{ sshd_server_key_bits }}
 SyslogFacility {{ sshd_syslog_facility }}
 LogLevel {{ sshd_log_level }}
 LoginGraceTime {{ sshd_login_grace_time }}
 PermitRootLogin {{ sshd_permit_root_login }}
 StrictModes {{ sshd_strict_modes }}
-RSAAuthentication {{ sshd_rsa_authentication }}
 PubkeyAuthentication {{ sshd_pubkey_authentication }}
 AuthorizedKeysFile {{ sshd_authorized_keys_file }}
 IgnoreRhosts {{ sshd_ignore_rhosts }}
-RhostsRSAAuthentication {{ sshd_rhosts_rsa_authentication }}
 HostbasedAuthentication {{ sshd_host_based_authentication }}
 IgnoreUserKnownHosts {{ sshd_ignore_user_known_hosts }}
 PermitEmptyPasswords {{ sshd_permit_empty_passwords }}

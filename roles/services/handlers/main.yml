@@ -1,0 +1,11 @@
+---
+  - name: Test and restart SSHD
+    command: sshd -t
+    notify: ["Restart SSHD"]
+    tags: sshd
+
+  - name: Restart SSHD
+    service:
+      name: "ssh"
+      state: "restarted"
+    tags: sshd

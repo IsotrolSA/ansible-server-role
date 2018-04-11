@@ -1,9 +1,0 @@
----
-  - name: Generate SSHD config
-    template:
-      src: "roles/services/templates/etc/ssh/sshd_config.j2"
-      dest: "/etc/ssh/sshd_config_ansible"
-      owner: "root"
-      group: "root"
-      mode: "0644"
-    notify: ["Test and restart SSHD"]
