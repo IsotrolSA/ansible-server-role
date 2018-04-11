@@ -4,18 +4,18 @@
       user: root
       state: present
       manage_dir: yes
-      key: https://raw.githubusercontent.com/IsotrolSA/ansible-client-role/{{branch}}/keys/id_rsa_guadalinfo.pub
+      key: https://raw.githubusercontent.com/IsotrolSA/ansible-server-role/{{branch}}/keys/id_rsa_guadalinfo.pub
 
   - name: Set RSA Pub Key user soporte
     authorized_key:
       user: soporte
       state: present
       manage_dir: yes
-      key: https://raw.githubusercontent.com/IsotrolSA/ansible-client-role/{{branch}}/keys/id_rsa_soporte_guadalinfo.pub
+      key: https://raw.githubusercontent.com/IsotrolSA/ansible-server-role/{{branch}}/keys/id_rsa_soporte_guadalinfo.pub
 
   - name: Set RSA Pub Key user soportext
     authorized_key:
       user: soportext
       state: present
       manage_dir: yes
-      key: https://raw.githubusercontent.com/IsotrolSA/ansible-client-role/{{branch}}/keys/id_rsa_soportext_guadalinfo.pub
+      key: https://raw.githubusercontent.com/IsotrolSA/ansible-server-role/{{branch}}/keys/id_rsa_soportext_guadalinfo.pub
