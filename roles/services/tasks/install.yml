@@ -1,0 +1,6 @@
+---
+  - name: Install SSH service
+    package:
+      name: ssh
+      state: present
+    tags: sshd

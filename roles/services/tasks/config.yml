@@ -1,0 +1,15 @@
+---
+  - name: Include SSHD variables
+    include_vars: sshd_vars.yml
+
+  - name: Generate sshd_config
+    template:
+      src: "roles/services/templates/etc/ssh/sshd_config.j2"
+      dest: "/etc/ssh/sshd_config"
+      owner: "root"
+      group: "root"
+      mode: "0644"
+      validate: /usr/sbin/sshd -t -f %s
+      backup: yes
+    tags: sshd
+    notify: ["Test and restart SSHD"]
