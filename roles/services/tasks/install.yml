@@ -1,7 +1,7 @@
 ---
-  - name: Install SSH service
-    package:
-      name: ssh
-      state: present
-    notify: ["Restart SSHD"]
-    tags: sshd
+  - name: Install OpenSSH server
+    apt:
+      name: "openssh-server"
+      state: "present"
+      install_recommends: False
+    notify: ["Test and restart SSHD"]
