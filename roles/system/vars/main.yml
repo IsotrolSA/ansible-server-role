@@ -1,4 +1,1 @@
-#python -c 'import crypt; print crypt.crypt("This is my Password", "$1$SomeSalt$")'
-password_soporte: $6$efetUJVlxWUD4$RBMHBTKbNPvKHkX0zX5j.EsnwkTkzqfCZPbbenTnje0jfkdyBJCUv5fhWl9p8aLT8jZhwS8jdQzcHus/eToGP/
-password_soportext: $6$IuW/fNep10FJ3k$uAZDUOjwu6r/joHsFI7AHLcrb.LVdUSeKnZXcchog6lwYJ3WWmolypJhfeTZQxz0f4QJFX63K8WmWmfTnHKs81
-branch: master
+---
