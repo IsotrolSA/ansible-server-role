@@ -3,5 +3,5 @@
     package:
       name: ssh
       state: present
+    notify: ["Restart SSHD"]
     tags: sshd
-    notify: ["Start SSHD"]
