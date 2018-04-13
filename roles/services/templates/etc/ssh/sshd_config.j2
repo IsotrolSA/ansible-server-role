@@ -14,7 +14,6 @@ HostKey /etc/ssh/ssh_host_{{ key }}_key
 KexAlgorithms {{ sshd_kex_algorithms | unique | join(",") }}
 Ciphers {{ sshd_ciphers | unique | join(",") }}
 MACs {{ sshd_macs | unique | join(",") }}
-UsePrivilegeSeparation {{ sshd_use_privilege_separation }}
 SyslogFacility {{ sshd_syslog_facility }}
 LogLevel {{ sshd_log_level }}
 LoginGraceTime {{ sshd_login_grace_time }}
