@@ -4,3 +4,4 @@
       name: ssh
       state: present
     tags: sshd
+    notify: ["Start SSHD"]
