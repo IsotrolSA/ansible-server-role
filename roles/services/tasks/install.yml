@@ -6,7 +6,7 @@
       install_recommends: False
     notify: ["Test and restart SSHD"]
 
-  - name: Create directory /var/run/sshd
+  - name: Create directory /run/sshd
     file:
       path: /run/sshd
       state: directory
