@@ -9,3 +9,9 @@
       name: "ssh"
       state: "restarted"
     tags: sshd
+
+  - name: Start SSHD
+    service:
+      name: "ssh"
+      state: "started"
+    tags: sshd

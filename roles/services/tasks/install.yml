@@ -1,6 +1,17 @@
 ---
-  - name: Install SSH service
-    package:
-      name: ssh
-      state: present
-    tags: sshd
+  - name: Install OpenSSH server
+    apt:
+      name: "openssh-server"
+      state: "present"
+      install_recommends: False
+    notify: ["Test and restart SSHD"]
+
+  - name: Create directory /run/sshd
+    file:
+      path: /run/sshd
+      state: directory
+      owner: root
+      group: root
+      mode: 0755
+      recurse: yes
+    when: ansible_os_family == "Debian" or ansible_os_family == "Ubuntu"

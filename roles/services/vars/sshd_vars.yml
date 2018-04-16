@@ -24,7 +24,6 @@ sshd_macs:
   - "hmac-sha2-512"
   - "hmac-sha2-256"
   - "umac-128@openssh.com"
-sshd_use_privilege_separation: "yes"
 sshd_syslog_facility: "AUTH"
 sshd_log_level: "INFO"
 sshd_login_grace_time: "120"

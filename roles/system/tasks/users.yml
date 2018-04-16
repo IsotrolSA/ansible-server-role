@@ -1,4 +1,13 @@
 ---
+  - name: Include Users variables
+    include_vars: users_vars.yml
+
+  - name: Set password user root
+    user:
+      name: root
+      password: '{{password_root}}'
+      state: present
+
   - name: Set password user soporte
     user:
       name: soporte
