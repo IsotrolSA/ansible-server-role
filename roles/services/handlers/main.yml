@@ -1,6 +1,6 @@
 ---
   - name: Test and restart SSHD
-    command: sshd -t
+    command: /usr/sbin/sshd -t
     notify: ["Restart SSHD"]
     tags: sshd
 
