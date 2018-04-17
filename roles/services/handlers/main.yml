@@ -15,3 +15,8 @@
       name: "ssh"
       state: "started"
     tags: sshd
+
+  - name: Generate SSHD Keys
+    command: /usr/bin/ssh-keygen -A
+    notify: ["Restart SSHD"]
+    tags: sshd
