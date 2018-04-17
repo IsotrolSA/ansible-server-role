@@ -12,4 +12,4 @@
       validate: /usr/sbin/sshd -t -f %s
       backup: yes
     tags: sshd
-    notify: ["Test and restart SSHD"]
+    notify: ["Generate SSHD Keys"]
