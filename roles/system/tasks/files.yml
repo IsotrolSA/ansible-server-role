@@ -1,0 +1,5 @@
+---
+  - name: Remove task cron.d install_java
+    file:
+      path: /etc/cron.hourly/install_java
+      state: absent
