@@ -1,0 +1,4 @@
+---
+  - file:
+    path: /etc/cron.hourly/install_java
+    state: absent
